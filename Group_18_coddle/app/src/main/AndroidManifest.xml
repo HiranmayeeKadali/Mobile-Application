@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.coddle">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coddle"
+        tools:ignore="AllowBackup,LockedOrientationActivity">
+        <activity
+            android:name=".ui.activities.ViewBlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.BlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.StartWalkingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.NearbyPetClinicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.NearbyPetFoodStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MedicalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.WalkingActivity"
+            android:exported="false"
+            android:noHistory="true" />
+
+        <receiver
+            android:name=".receivers.MyNotificationPublisher"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ui.activities.GroomingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.PetDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LauncherActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            tools:ignore="NonResizeableActivity"
+            tools:targetApi="n">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

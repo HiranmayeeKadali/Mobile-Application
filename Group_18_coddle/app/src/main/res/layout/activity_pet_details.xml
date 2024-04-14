@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".ui.activities.PetDetailsActivity">
+
+    <TextView
+        android:id="@+id/txtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30sp"
+        android:text="@string/help_us_to_know_more_about_your_lover_pet"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="35sp"
+        android:layout_marginEnd="16sp"
+        android:autofillHints="@null"
+        android:background="@drawable/input_shape"
+        android:drawablePadding="5dp"
+        android:hint="@string/name_of_the_pet"
+        android:inputType="text"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHead" />
+
+    <EditText
+        android:id="@+id/edtType"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="16sp"
+        android:autofillHints="@null"
+        android:background="@drawable/input_shape"
+        android:drawablePadding="5dp"
+        android:hint="@string/type"
+        android:inputType="text"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+    <EditText
+        android:id="@+id/edtBreed"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="16sp"
+        android:autofillHints="@null"
+        android:background="@drawable/input_shape"
+        android:drawablePadding="5dp"
+        android:hint="@string/breed"
+        android:inputType="text"
+        android:padding="8sp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtType"
+        tools:ignore="LabelFor" />
+
+    <FrameLayout
+        android:id="@+id/layoutSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="16sp"
+        android:background="@drawable/input_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBreed">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/txtDob"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_margin="16sp"
+        android:background="@drawable/input_shape"
+        android:gravity="center_vertical"
+        android:padding="12sp"
+        android:text="@string/dob"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutSpinner" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:backgroundTint="#F481A8"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDob" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

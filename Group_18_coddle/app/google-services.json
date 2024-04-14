@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "739443625425",
+    "project_id": "coddle-4b485",
+    "storage_bucket": "coddle-4b485.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739443625425:android:8b976a3f78b65f5fece4f0",
+        "android_client_info": {
+          "package_name": "com.coddle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739443625425-gbbl8dvk3h9jj4iur83ofbl3eg29m2i7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVRc_6WvhruZB5AMleD9x7DIcBDoTL1Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739443625425-gbbl8dvk3h9jj4iur83ofbl3eg29m2i7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
